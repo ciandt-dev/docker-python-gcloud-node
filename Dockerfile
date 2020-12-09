@@ -1,4 +1,4 @@
-FROM python:3.7.7
+FROM python:3.8.6
 
 # Add Packages to install google Chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
@@ -33,12 +33,12 @@ ENV TERM=xterm-256color
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 
-ARG NODE_VERSION=12.14.1
-ARG NPM_VERSION=6.13.6
+ARG NODE_VERSION=12.18.4
+ARG NPM_VERSION=6.14.6
 ARG CHROMEDRIVER_VERSION=80.0.3987.16
 ARG SONAR_SCANNER_VERSION=4.2.0.1873
 ARG MAVEN_VERSION=3.6.3
-ARG ANGULAR_CLI_VERSION=8.3.23
+ARG ANGULAR_CLI_VERSION=10.1.2
 
 # Dependencies to install on the image
 COPY requirements_dev.txt /tmp/requirements_dev.txt
