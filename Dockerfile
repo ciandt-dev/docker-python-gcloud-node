@@ -1,4 +1,4 @@
-FROM python:3.7.7
+FROM python:3.8.6
 
 # Add Packages to install google Chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -

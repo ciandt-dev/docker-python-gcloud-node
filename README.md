@@ -1,7 +1,7 @@
 # Python with Node env to run tests
 
 Base image with:
-- python 3.7.7
+- python 3.8.6
 - node 12.18.4
 - npm 6.14.6
 - chromedriver 80.0.3987.16
